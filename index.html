@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <nav class="navbar">
+            <ul>
+                <li class="title">Jam Quiz !</li>
+            </ul>
+        </nav>
+
+        <div class="container">
+
+            <p class="quote">sfsef</p>
+            <p class="author">qddqdqd</p>
+
+            <form class="answerForm" onsubmit="return false">
+                <input type="text" class="answerText" placeholder="Who said this ?">
+                <button id="answerButton">Try answer !</button>
+                <button class="restart">Restart</button>
+            </form>
+            <p class="attempts">Attempts remaining :<span id='attemptsNum'>3</span></p>
+            <p class="score">Score :<span id='scoreNum'>0</span></p>
+
+        </div>
+
+        <div class="footer">
+            <h1 class="rules">Rules of the game :</h1>
+            <h3 class="rulesDesc"> Welcome to the Harry Potter quiz, try to guess all the quotes.<br> You have 3 attempts to guess who said the quote and your total score will be displayed at the end.</h3>
+        </div>
+
+        <script src="app.js" async defer></script>
+    </body>
+</html>
