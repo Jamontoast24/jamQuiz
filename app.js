@@ -64,6 +64,10 @@ const playGame = () => {
                         if (attempts < 1) {
                             answerBtn.disabled = true
                             authorText.innerHTML = 'the correct answer was ' + quotes[currentQuestion].author
+                            if (currentQuestion == quotes.length - 1) {
+                                quoteText.innerHTML = 'The quiz is over'
+                                authorText.innerHTML = 'Your score is ' + scoreDisplay.innerHTML
+                            }
                         }
                         return
                     } else if (userGuess.value === quotes[currentQuestion].author) {
@@ -72,8 +76,6 @@ const playGame = () => {
                         scoreDisplay.innerHTML++
                         if (currentQuestion == quotes.length - 1) {
                             answerBtn.disabled = true
-                            quoteText.innerHTML = 'The quiz is over'
-                            authorText.innerHTML = 'Your score is ' + scoreDisplay.innerHTML
                             return
                         }
                     }
